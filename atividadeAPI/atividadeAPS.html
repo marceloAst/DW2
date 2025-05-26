@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario do ISBN</title>
+    <title>Formulário do ISBN</title>
     <link rel="stylesheet" href="./atividaddeAPS.css">
 </head>
 <body>
-    <form action="#">
-        <h1> Encontre livros a partir do ISBN</h1>
+    <form action="#" class="form-container">
+        <h1>Encontre livros a partir do ISBN</h1>
         <div class="caixa">
             <div class="form-group">
-                <input type="number" name="isbn" id="isbn" placeholder="ISBN" required><button type="button" onclick="buscarISBN()">Clique aqui</button>
+                <input type="number" name="isbn" id="isbn" placeholder="ISBN" aria-label="ISBN" autocomplete="off" required>
+                <button type="button" onclick="buscarISBN()">Clique aqui</button>
             </div>
+
             <div class="form-group">
-                <label for="logradouro">Autores</label>
-                <input type="text" id="autor" placeholder="autores" required>
+                <label for="autor">Autores</label>
+                <input type="text" id="autor" name="autor" placeholder="Autores" aria-label="Autores" autocomplete="off" required>
             </div>
+
             <div class="form-group">
-                <label for="logradouro">Titulo</label>
-                <input type="text" id="titulo" placeholder="titulo" required>
-            <div class="form-group">
-                <label for="logradouro">Ano</label>
-                <input type="text" id="ano" placeholder="ano" required>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Título" aria-label="Título" autocomplete="off" required>
             </div>
+
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <input type="text" id="ano" name="ano" placeholder="Ano" aria-label="Ano" autocomplete="off" required>
             </div>
         </div>
     </form>
