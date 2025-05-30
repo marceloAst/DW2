@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@300;400;600&display=swap');
+
+.app-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: royalblue;
+    color: rgb(253, 253, 253);
+    font-size: smaller;
+    text-align: center;
+    padding-bottom: 0%;
+    width: 1000px;
+    border-radius: 20px;
+}
