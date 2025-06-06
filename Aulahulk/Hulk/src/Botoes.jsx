@@ -4,6 +4,7 @@ function Botoes({ onIncrement, onDecrement }){
             <button onClick={onDecrement}>-</button>
             <button onClick={onIncrement}>+</button>
         </div>
+        
     );
 }
 
