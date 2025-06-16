@@ -1,18 +1,13 @@
-function Input(){
+import React from 'react'
 
-    return(
-        <div>
-            <h1>Calculadora de IMC</h1>
-            <div className="informacao">
-                <input type="number" />
-                <input type="number" />
-            </div>
-            <button>Calcular IMC</button>
-            <p>Seu IMC é:</p>
-            <p>Categoria:</p>
-        </div>
-    )
-
+export default function Input({ label, valor, onChange }) {
+  return (
+    <input
+      type="text"
+      placeholder={label}
+      value={valor}
+      onChange={onChange}
+      style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
+    />
+  )
 }
-
-export default Input;
